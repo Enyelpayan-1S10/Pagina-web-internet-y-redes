@@ -1,9 +1,12 @@
-/* RESET */
+/* ==========================
+   CONFIGURACIÓN GENERAL
+========================== */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Segoe UI', sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html{
@@ -11,33 +14,39 @@ html{
 }
 
 body{
-    background:#F8F4EE;
-    color:#3E3428;
-    line-height:1.6;
+    background:#f7f3ed;
+    color:#3b3228;
+    line-height:1.7;
 }
 
-/* HEADER */
+/* ==========================
+   HEADER
+========================== */
+
 header{
-    background:linear-gradient(135deg,#D8C3A5,#C8B08A);
+    background:linear-gradient(135deg,#d8c3a5,#cbb38f);
     text-align:center;
-    padding:70px 20px;
-    animation:fadeDown 1.2s ease;
+    padding:80px 20px;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
 }
 
 header h1{
-    font-size:3rem;
+    font-size:3.5rem;
+    margin-bottom:10px;
 }
 
 header p{
-    margin-top:10px;
     font-size:1.2rem;
 }
 
-/* MENU */
+/* ==========================
+   MENÚ
+========================== */
+
 nav{
-    background:#B89B72;
+    background:#a67c52;
     text-align:center;
-    padding:15px;
+    padding:18px;
     position:sticky;
     top:0;
     z-index:1000;
@@ -52,76 +61,31 @@ nav a{
 }
 
 nav a:hover{
-    color:#FFF;
-    letter-spacing:1px;
+    color:#ffe8c7;
 }
 
-/* SECCIONES */
+/* ==========================
+   SECCIONES
+========================== */
+
 section{
     max-width:1200px;
     margin:auto;
-    padding:60px 20px;
+    padding:70px 20px;
 }
 
-.card{
-    background:#FFFDF9;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 5px 20px rgba(0,0,0,.1);
-    margin-bottom:30px;
-    animation:fadeUp 1s ease;
-    transition:.3s;
+section h2{
+    text-align:center;
+    color:#7a5c3e;
+    margin-bottom:25px;
+    font-size:2rem;
 }
 
-.card:hover{
-    transform:translateY(-8px);
-}
+/* ==========================
+   TARJETAS
+========================== */
 
-.card img{
-    width:100%;
-    height:350px;
-    object-fit:cover;
-}
-
-.card-content{
-    padding:25px;
-}
-
-h2{
-    color:#7A5C3E;
-    margin-bottom:15px;
-}
-
-/* SERVICIOS */
-.servicios{
-    display:flex;
-    flex-wrap:wrap;
-    gap:20px;
-}
-
-.servicio{
-    flex:1;
-    min-width:280px;
-    background:#F5EBDD;
-    padding:20px;
-    border-radius:15px;
-    border-left:6px solid #A67C52;
-    transition:.4s;
-}
-
-.servicio:hover{
-    transform:translateY(-8px);
-}
-
-.servicio img{
-    width:100%;
-    height:180px;
-    object-fit:cover;
-    border-radius:10px;
-    margin-bottom:15px;
-}
-
-/* PAQUETES */
+.servicios,
 .paquetes{
     display:flex;
     flex-wrap:wrap;
@@ -129,140 +93,174 @@ h2{
     justify-content:center;
 }
 
+.servicio,
 .paquete{
-    width:320px;
     background:white;
+    width:320px;
     padding:25px;
-    border-radius:20px;
-    text-align:center;
-    border-top:6px solid #A67C52;
-    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
     transition:.4s;
 }
 
+.servicio:hover,
 .paquete:hover{
-    transform:scale(1.05);
+    transform:translateY(-8px);
+}
+
+.servicio h3,
+.paquete h3{
+    color:#7a5c3e;
+    margin-bottom:10px;
 }
 
 .precio{
-    font-size:2.5rem;
-    color:#7A5C3E;
-    margin:15px 0;
+    font-size:2rem;
+    text-align:center;
+    color:#a67c52;
     font-weight:bold;
+    margin:15px 0;
 }
 
-.paquete ul{
-    list-style:none;
-    text-align:left;
-    margin-bottom:20px;
+/* ==========================
+   LISTAS
+========================== */
+
+ul{
+    padding-left:20px;
 }
 
-.paquete li{
-    padding:6px;
+li{
+    margin-bottom:8px;
 }
+
+/* ==========================
+   BOTONES
+========================== */
 
 .boton{
     display:inline-block;
-    padding:12px 22px;
-    background:#A67C52;
+    background:#a67c52;
     color:white;
     text-decoration:none;
+    padding:12px 22px;
     border-radius:10px;
+    margin-top:15px;
     transition:.3s;
 }
 
 .boton:hover{
-    background:#8B6B47;
+    background:#8f6841;
 }
 
-/* GRAFICAS */
+/* ==========================
+   IMÁGENES
+========================== */
+
+.imagen-principal{
+    width:100%;
+    border-radius:20px;
+    margin-bottom:20px;
+    box-shadow:0 6px 15px rgba(0,0,0,.1);
+}
+
+/* ==========================
+   GRÁFICAS
+========================== */
+
+.graficas{
+    margin-top:50px;
+}
+
 .grafica{
-    margin-top:30px;
+    margin-bottom:25px;
+}
+
+.grafica p{
+    margin-bottom:8px;
+    font-weight:bold;
 }
 
 .barra{
-    background:#DDD;
+    width:100%;
+    background:#ddd;
     border-radius:20px;
     overflow:hidden;
-    margin-bottom:20px;
 }
 
 .progreso{
     height:35px;
-    color:white;
-    font-weight:bold;
-    text-align:center;
     line-height:35px;
-    animation:llenar 3s ease forwards;
+    color:white;
+    text-align:center;
+    font-weight:bold;
+    border-radius:20px;
+}
+
+.satisfaccion{
+    width:98%;
+    background:#28a745;
 }
 
 .internet{
     width:95%;
-    background:#A67C52;
-}
-
-.redes{
-    width:90%;
-    background:#8B6B47;
+    background:#a67c52;
 }
 
 .soporte{
-    width:98%;
-    background:#6B4F33;
+    width:93%;
+    background:#6f4e37;
 }
 
-/* FOOTER */
+/* ==========================
+   ANIMACIONES
+========================== */
+
+.servicio,
+.paquete{
+    animation:aparecer .8s ease;
+}
+
+@keyframes aparecer{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
 footer{
-    background:#B89B72;
+    background:#a67c52;
     color:white;
     text-align:center;
     padding:25px;
+    margin-top:40px;
 }
 
-/* ANIMACIONES */
-@keyframes fadeDown{
-    from{
-        opacity:0;
-        transform:translateY(-50px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
+/* ==========================
+   RESPONSIVE
+========================== */
 
-@keyframes fadeUp{
-    from{
-        opacity:0;
-        transform:translateY(50px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
-@keyframes llenar{
-    from{
-        width:0;
-    }
-}
-
-/* RESPONSIVE */
 @media(max-width:768px){
 
     header h1{
-        font-size:2.2rem;
+        font-size:2.5rem;
     }
 
-    .servicios,
-    .paquetes{
-        flex-direction:column;
-        align-items:center;
-    }
-
+    .servicio,
     .paquete{
         width:100%;
-        max-width:350px;
+    }
+
+    nav a{
+        display:block;
+        margin:10px 0;
     }
 }
