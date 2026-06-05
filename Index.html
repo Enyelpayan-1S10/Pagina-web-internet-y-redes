@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NetConnect - Internet, Redes y Mantenimiento</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#F8F4EE;
+    color:#3E3428;
+    line-height:1.6;
+}
+
+/* Encabezado */
+header{
+    background:linear-gradient(135deg,#D8C3A5,#C8B08A);
+    color:#2F2419;
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    margin-top:10px;
+    font-size:1.2rem;
+}
+
+/* Menú */
+nav{
+    background:#B89B72;
+    text-align:center;
+    padding:15px;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#FDF6EC;
+}
+
+/* Secciones */
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+.card{
+    background:#FFFDF9;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,0.12);
+    margin-bottom:30px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:25px;
+}
+
+h2{
+    color:#7A5C3E;
+    margin-bottom:15px;
+}
+
+/* Servicios */
+.servicios{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.servicio{
+    flex:1;
+    min-width:250px;
+    background:#F5EBDD;
+    padding:20px;
+    border-radius:15px;
+    border-left:5px solid #A67C52;
+    transition:0.3s;
+}
+
+.servicio:hover{
+    transform:translateY(-5px);
+}
+
+.servicio img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+/* Paquetes */
+.paquetes{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.paquete{
+    width:320px;
+    background:#FFFDF9;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    border-top:6px solid #A67C52;
+    box-shadow:0 4px 12px rgba(0,0,0,0.12);
+    transition:0.3s;
+}
+
+.paquete:hover{
+    transform:translateY(-8px);
+}
+
+.paquete h3{
+    color:#7A5C3E;
+}
+
+.precio{
+    font-size:2rem;
+    font-weight:bold;
+    color:#7A5C3E;
+    margin:15px 0;
+}
+
+.paquete ul{
+    list-style:none;
+    margin-bottom:20px;
+    text-align:left;
+}
+
+.paquete li{
+    padding:6px 0;
+}
+
+.boton{
+    display:inline-block;
+    background:#A67C52;
+    color:white;
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:8px;
+}
+
+.boton:hover{
+    background:#8B6B47;
+}
+
+/* Footer */
+footer{
+    background:#B89B72;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>NetConnect</h1>
+    <p>Internet, Redes y Mantenimiento de Computadoras</p>
+</header>
+
+<nav>
+    <a href="#empresa">Empresa</a>
+    <a href="#internet">Internet</a>
+    <a href="#redes">Redes</a>
+    <a href="#mantenimiento">Mantenimiento</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#paquetes">Paquetes</a>
+</nav>
+
+<!-- Empresa -->
+<section id="empresa">
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200" alt="Empresa tecnológica">
+        <div class="card-content">
+            <h2>¿Quiénes Somos?</h2>
+            <p>
+                NetConnect es una empresa especializada en la instalación de Internet,
+                configuración de redes informáticas y mantenimiento de computadoras.
+                Brindamos soluciones tecnológicas confiables para hogares, negocios
+                e instituciones educativas.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Internet -->
+<section id="internet">
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200" alt="Internet">
+        <div class="card-content">
+            <h2>¿Qué es Internet?</h2>
+            <p>
+                Internet es una red mundial de computadoras interconectadas que
+                permite compartir información, comunicarse y acceder a servicios
+                digitales desde cualquier parte del mundo.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Redes -->
+<section id="redes">
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1200" alt="Redes">
+        <div class="card-content">
+            <h2>¿Qué son las Redes?</h2>
+            <p>
+                Una red informática es un conjunto de dispositivos conectados
+                entre sí para compartir información y recursos. Las redes son
+                fundamentales para el funcionamiento de empresas, escuelas y hogares.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Mantenimiento -->
+<section id="mantenimiento">
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200" alt="Mantenimiento">
+        <div class="card-content">
+            <h2>Mantenimiento de Computadoras</h2>
+
+            <h3>Mantenimiento Preventivo</h3>
+            <p>
+                Consiste en realizar limpieza física, optimización del sistema,
+                actualización de programas y revisión de componentes para prevenir
+                fallas y prolongar la vida útil del equipo.
+            </p>
+
+            <br>
+
+            <h3>Mantenimiento Correctivo</h3>
+            <p>
+                Se realiza cuando existe una falla en el equipo. Incluye reparación
+                de hardware, eliminación de virus, recuperación de datos y solución
+                de problemas de software.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Servicios -->
+<section id="servicios">
+
+    <h2 style="text-align:center;">Nuestros Servicios</h2>
+    <br>
+
+    <div class="servicios">
+
+        <div class="servicio">
+            <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600" alt="">
+            <h3>Instalación de Internet</h3>
+            <p>
+                Instalación y configuración profesional de servicios de Internet
+                para hogares y empresas.
+            </p>
+        </div>
+
+        <div class="servicio">
+            <img src="https://images.unsplash.com/photo-1563770660941-20978e870e26?w=600" alt="">
+            <h3>Cobertura Wi-Fi</h3>
+            <p>
+                Optimización y ampliación de la señal inalámbrica para una mejor
+                experiencia de conexión.
+            </p>
+        </div>
+
+        <div class="servicio">
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600" alt="">
+            <h3>Configuración de Redes</h3>
+            <p>
+                Diseño e implementación de redes seguras y eficientes para
+                hogares y negocios.
+            </p>
+        </div>
+
+        <div class="servicio">
+            <img src="https://images.unsplash.com/photo-1588702547919-26089e690ecc?w=600" alt="">
+            <h3>Mantenimiento Preventivo</h3>
+            <p>
+                Limpieza física de equipos, optimización del sistema,
+                actualización de software y revisión de componentes.
+            </p>
+        </div>
+
+        <div class="servicio">
+            <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=600" alt="">
+            <h3>Mantenimiento Correctivo</h3>
+            <p>
+                Diagnóstico y reparación de computadoras, eliminación de virus,
+                recuperación de datos y solución de fallas.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Paquetes -->
+<section id="paquetes">
+
+    <h2 style="text-align:center;">Paquetes de Instalación y Mantenimiento</h2>
+    <br>
+
+    <div class="paquetes">
+
+        <div class="paquete">
+            <h3>Plan Básico</h3>
+            <div class="precio">C$ 500</div>
+
+            <ul>
+                <li>✔ Instalación básica de Internet</li>
+                <li>✔ Configuración de router</li>
+                <li>✔ Revisión general del equipo</li>
+                <li>✔ Limpieza básica de software</li>
+            </ul>
+
+            <a href="#" class="boton">Contratar</a>
+        </div>
+
+        <div class="paquete">
+            <h3>Plan Intermedio</h3>
+            <div class="precio">C$ 1000</div>
+
+            <ul>
+                <li>✔ Instalación completa</li>
+                <li>✔ Optimización de señal Wi-Fi</li>
+                <li>✔ Mantenimiento preventivo</li>
+                <li>✔ Actualización de software</li>
+                <li>✔ Soporte técnico</li>
+            </ul>
+
+            <a href="#" class="boton">Contratar</a>
+        </div>
+
+        <div class="paquete">
+            <h3>Plan Premium</h3>
+            <div class="precio">C$ 1500</div>
+
+            <ul>
+                <li>✔ Máxima cobertura Wi-Fi</li>
+                <li>✔ Seguridad de red</li>
+                <li>✔ Mantenimiento preventivo y correctivo</li>
+                <li>✔ Eliminación de virus</li>
+                <li>✔ Soporte prioritario</li>
+                <li>✔ Atención personalizada</li>
+            </ul>
+
+            <a href="#" class="boton">Contratar</a>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 NetConnect | Soluciones Tecnológicas Integrales</p>
+</footer>
+
+</body>
+</html>
